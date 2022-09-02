@@ -7,7 +7,9 @@ body {
   flex-direction: column;
   gap: 48px;
   align-items: center;
-  background: #333333;
+  background: #e0e0e0;
+  padding: 70px 196px;
+  font-family: "montserrat";
 }
 .Summary__Horizontal {
   box-sizing: border-box;
@@ -299,7 +301,7 @@ progress::-webkit-progress-value {
 }
 
 .Skills__Vertical {
-  max-width: 390px;
+  max-width: 426px;
   min-height: 284px;
   width: 100%;
   height: 100%;
@@ -310,7 +312,6 @@ progress::-webkit-progress-value {
   font-family: "montserrat";
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 22px;
   gap: 22px;
   background-color: white;
   padding: 22px;
@@ -335,7 +336,7 @@ progress::-webkit-progress-value {
   justify-content: space-between;
 }
 .progressBar {
-  width: 222px;
+  width: 236px;
 }
 .Blog__Horizontal {
   box-sizing: border-box;
@@ -395,7 +396,7 @@ progress::-webkit-progress-value {
 }
 
 .Blog__Vertical {
-  max-width: 536px;
+  max-width: 596px;
   max-height: 646px;
   width: 100%;
   height: 100%;
@@ -528,7 +529,7 @@ progress::-webkit-progress-value {
   max-width: 168px;
 }
 .Experiences__Vertical {
-  max-width: 418px;
+  max-width: 596px;
   max-height: 690px;
   width: 100%;
   height: 100%;
@@ -536,14 +537,18 @@ progress::-webkit-progress-value {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 22px;
   gap: 44px;
   background-color: white;
-  padding: 22px;
-  padding-right: 0px;
+  padding: 22px 32px;
+}
+.Experiences__Vertical > h1 {
+  color: #4f4f4f;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
 }
 .EV__Experience__Cards {
   display: flex;
@@ -576,7 +581,7 @@ progress::-webkit-progress-value {
   line-height: 20px;
   font-weight: 500;
   color: #828282;
-  max-width: 271px;
+  max-width: 388px;
 }
 .EV__Experience__Card {
   display: flex;
@@ -600,7 +605,6 @@ progress::-webkit-progress-value {
 .Hobbies__Horizontal > h1 {
   font-size: 24px;
   font-weight: 500;
-  background-color: white;
   max-width: 178px;
   line-height: 30px;
   color: #4f4f4f;
@@ -656,10 +660,10 @@ progress::-webkit-progress-value {
   gap: 26px;
 }
 .Hobbies__Vertical > h1 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   max-width: 178px;
-  line-height: 22px;
+  line-height: 30px;
   color: #333333;
 }
 .HV__Hobbies__Cards {
@@ -692,4 +696,111 @@ progress::-webkit-progress-value {
   font-weight: 500;
   line-height: 20px;
   color: #828282;
+}
+
+/* Profile 1 styles */
+.Profile1__Details {
+  display: grid;
+  width: 1046px;
+  height: fit-content;
+  grid-auto-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+.item1 {
+  grid-row: 1;
+  grid-column: 1;
+  align-self: stretch;
+}
+.item2 {
+  grid-column: 2 / span 4;
+  grid-row: 1 / span 2;
+}
+.item3 {
+  grid-row: 2 / 4;
+  grid-column: 1;
+  width: fit-content;
+  height: fit-content;
+  align-self: flex-end;
+}
+.item4 {
+  grid-column: 2 / span 3;
+  grid-row: 3/4;
+  width: 592px;
+}
+
+.Profile1__Projects {
+  box-sizing: border-box;
+  max-width: 1046px;
+  max-height: fit-content;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  gap: 22px;
+}
+.Profile1__ProjectInfo {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 22px;
+}
+.Profile1__ProjectInfo > h1 {
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 178px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+.Project__Tags {
+  display: flex;
+  gap: 16px;
+}
+.projectTag {
+  width: 86px;
+  height: 34px;
+  border: 1px solid #4f4f4f;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 8px 22px;
+  box-sizing: border-box;
+}
+.selectedTag {
+  background-color: #2f80ed;
+  width: fit-content;
+  border-color: #2f80ed;
+  color: white;
+}
+.Profile1__ProjectCards {
+  display: flex;
+  gap: 30px;
+  width: inherit;
+}
+
+.bottomButton {
+  background-color: white;
+  border: none;
+  height: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #2f80ed;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  width: 100%;
 }
